@@ -8,9 +8,8 @@ export class CharacterControllerService {
   constructor(private prisma: PrismaService) {}
 
   async create(createCharacterControllerDto: CreateCharacterControllerDto) {
-    return this.prisma.character.create({
-      data: createCharacterControllerDto,
-    });
+    
+   
   }
 
   async findAll() {
